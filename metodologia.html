@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología Detallada - Guía SLR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-heart-pulse-fill me-2"></i>Análisis SLR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="introduccion.html">Introducción</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="metodologia.html">Metodología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prisma.html">Diagrama PRISMA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resultados.html">Resultados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="discusion.html">Discusión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conclusion.html">Conclusión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4">Metodología de la Revisión</h1>
+            <p class="lead">Un análisis detallado del enfoque PRISMA y la evaluación CASP en el estudio de Guo et al. (2024).</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="main-content">
+                    <!-- Indicador de progreso narrativo -->
+                    <div class="progress mb-4" style="height: 8px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">Paso 2 de 5: Metodología PRISMA</small>
+
+                    <!-- Introducción visual con iconos -->
+                    <div class="alert alert-info d-flex align-items-center mb-4">
+                        <i class="bi bi-compass fs-1 me-3"></i>
+                        <div>
+                            <h4 class="alert-heading mb-2">Marco Metodológico</h4>
+                            <p class="mb-0">La revisión sistemática sigue rigurosamente las directrices <strong>PRISMA 2020</strong>, garantizando transparencia y reproducibilidad en cada etapa del proceso.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sección PRISMA con infografía -->
+                    <section id="prisma" class="mb-5">
+                        <h2 class="section-title"><i class="bi bi-diagram-3-fill text-primary me-2"></i>El Protocolo PRISMA</h2>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="prisma-info-card">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="badge bg-primary rounded-circle p-3 me-3">
+                                            <i class="bi bi-shield-check fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Estándar de Oro</h5>
+                                            <small class="text-muted">Para revisiones sistemáticas</small>
+                                        </div>
+                                    </div>
+                                    <p>PRISMA proporciona una guía esencial para garantizar que el reporte de una revisión sistemática sea completo, transparente y reproducible.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="prisma-info-card">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="badge bg-success rounded-circle p-3 me-3">
+                                            <i class="bi bi-graph-up fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Validez Científica</h5>
+                                            <small class="text-muted">Evidencia de alta calidad</small>
+                                        </div>
+                                    </div>
+                                    <p>Su uso asegura la validez de los hallazgos y facilita la replicación de estudios futuros en el área de investigación.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-info">
+                            <h5><i class="bi bi-info-circle-fill"></i> Referencia Académica</h5>
+                            <p><strong>PRISMA 2020</strong> <span class="tooltip-trigger" data-bs-toggle="tooltip" data-bs-placement="top" title="Preferred Reporting Items for Systematic Reviews and Meta-Analyses: Guía internacional para reportar revisiones sistemáticas y meta-análisis de forma transparente y reproducible"><i class="bi bi-info-circle text-primary"></i></span> representa la evolución de las directrices originales, incorporando nuevos elementos para mejorar la claridad y completitud de los reportes.</p>
+                            <cite class="callout-citation">Page, M. J., et al. (2021). The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. <em>The BMJ</em>, 372 <a href="#ref-20" class="ref-link">[20]</a>.</cite>
+                        </div>
+                    </section>
+
+                    <!-- Estrategia de búsqueda mejorada -->
+                    <section id="busqueda" class="mb-5">
+                        <h3 class="mb-4"><i class="bi bi-search fs-4 text-primary me-2"></i>Estrategia de Búsqueda</h3>
+                        
+                        <!-- Bases de datos con iconos -->
+                        <div class="row mb-4">
+                            <div class="col-md-3 text-center mb-3">
+                                <div class="database-card">
+                                    <i class="bi bi-journal-medical text-primary display-4"></i>
+                                    <h6 class="mt-2">PubMed</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center mb-3">
+                                <div class="database-card">
+                                    <i class="bi bi-globe text-success display-4"></i>
+                                    <h6 class="mt-2">Web of Science</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center mb-3">
+                                <div class="database-card">
+                                    <i class="bi bi-google text-warning display-4"></i>
+                                    <h6 class="mt-2">Google Scholar</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center mb-3">
+                                <div class="database-card">
+                                    <i class="bi bi-cpu text-info display-4"></i>
+                                    <h6 class="mt-2">IEEE Xplore</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ecuación de búsqueda visual -->
+                        <div class="card-methodology mb-4">
+                            <div class="card-header">
+                                <h4><i class="bi bi-formula me-2"></i>Estrategia de Búsqueda Exacta del Paper</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-info mb-3">
+                                    <h6><i class="bi bi-info-circle me-2"></i>Términos MeSH Utilizados</h6>
+                                    <p class="mb-0">Se utilizaron términos MeSH de Medline para garantizar búsqueda exhaustiva y reproducible.</p>
+                                </div>
+                                
+                                <div class="search-formula">
+                                    <div class="formula-group">
+                                        <span class="badge bg-primary p-2">Categoría I: Emociones</span>
+                                        <small class="d-block text-muted mt-1"><strong>Términos exactos:</strong> "psychology" OR "psychic" OR "psychological" OR "mental" OR "mind" OR "mood" OR "sentiments" OR "emotion" OR "emotional" OR "feel" OR "affective" OR "face" OR "facial" OR "brain wave" OR "speech" OR "voice" OR "electroencephalogram" OR "EEG" OR "electrocardiogram" OR "ECG"</small>
+                                    </div>
+                                    <div class="operator">AND</div>
+                                    <div class="formula-group">
+                                        <span class="badge bg-success p-2">Categoría II: Reconocimiento</span>
+                                        <small class="d-block text-muted mt-1"><strong>Términos exactos:</strong> "identify" OR "identification" OR "recognition" OR "monitor" OR "survey" OR "express" OR "perception" OR "process" OR "track" OR "recognize"</small>
+                                    </div>
+                                    <div class="operator">AND</div>
+                                    <div class="formula-group">
+                                        <span class="badge bg-warning text-dark p-2">Categoría III: Pacientes</span>
+                                        <small class="d-block text-muted mt-1"><strong>Términos exactos:</strong> "clinical" OR "patient" OR "medical treatment" OR "health care"</small>
+                                    </div>
+                                </div>
+                                <div class="mt-3 p-3 bg-light rounded">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <strong>🗓️ Filtro Temporal:</strong> 2013–2023 (última década)<br>
+                                            <strong>🌍 Idioma:</strong> Solo inglés<br>
+                                            <strong>📊 Tipo:</strong> Estudios empíricos
+                                        </div>
+                                        <div class="col-md-6">
+                                            <strong>🎯 Población:</strong> Pacientes con trastornos mentales/físicos<br>
+                                            <strong>🔬 Requisito:</strong> Al menos un método de reconocimiento emocional<br>
+                                            <strong>📋 Gestión:</strong> EndNote 20
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Criterios de inclusión/exclusión detallados -->
+                        <div class="card-methodology mb-4">
+                            <div class="card-header">
+                                <h4><i class="bi bi-funnel me-2"></i>Criterios de Elegibilidad</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="text-success"><i class="bi bi-check-circle me-2"></i>Criterios de Inclusión</h6>
+                                        <ul class="list-unstyled">
+                                            <li>✅ <strong>Idioma:</strong> Artículos publicados solo en inglés</li>
+                                            <li>✅ <strong>Periodo:</strong> Investigación publicada entre 2013-2023</li>
+                                            <li>✅ <strong>Población:</strong> Participantes con trastornos mentales/físicos o extraídos de bases de datos públicas</li>
+                                            <li>✅ <strong>Intervención:</strong> Propuesta de al menos un método/modelo/sistema para monitoreo emocional</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-danger"><i class="bi bi-x-circle me-2"></i>Criterios de Exclusión</h6>
+                                        <ul class="list-unstyled">
+                                            <li>❌ <strong>Duplicados:</strong> Artículos recuperados de diferentes bases de datos</li>
+                                            <li>❌ <strong>Formato:</strong> Resúmenes, actas de conferencias, reportes no obtenibles</li>
+                                            <li>❌ <strong>Relevancia:</strong> Artículos no relacionados con el tema de estudio</li>
+                                            <li>❌ <strong>Enfoque:</strong> Estudios sobre respuestas emocionales a estímulos externos vs. reconocimiento tecnológico</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Proceso de selección -->
+                        <div class="alert alert-success">
+                            <h6><i class="bi bi-people me-2"></i>Proceso de Revisión</h6>
+                            <p><strong>Fase 1:</strong> Dos investigadores entrenados filtraron relevancia de títulos y resúmenes</p>
+                            <p><strong>Fase 2:</strong> Verificación cruzada por otro revisor</p>
+                            <p><strong>Fase 3:</strong> Primer y último autor realizaron revisión final de textos completos</p>
+                            <p class="mb-0"><strong>Consenso:</strong> Resultados sometidos a discusión grupal del equipo</p>
+                        </div>
+
+                        <!-- Diagrama PRISMA mejorado -->
+                        <h4 class="mb-3"><i class="bi bi-diagram-2 me-2"></i>Flujo de Selección PRISMA</h4>
+                        <div class="prisma-diagram">
+                            <div class="mermaid">
+graph TD
+    A["<b>🔍 Identificación inicial</b><br/>(n = 3,736)"] --> C("<b>📋 Después de eliminar duplicados</b><br/>(n = 3,234)");
+    A --> B("❌ Duplicados eliminados<br/>(n = 502)");
+    
+    subgraph "🔍 Identificación"
+        A
+        B
+    end
+
+    C --> D("<b>📖 Registros evaluados</b><br/>(n = 3,234)");
+    D --> E("❌ Excluidos por título/resumen<br/>(n = 2,334)");
+    D --> F("<b>📄 Textos completos evaluados</b><br/>(n = 900)");
+    
+    subgraph "📖 Cribado"
+        C
+        D
+        E
+        F
+    end
+
+    F --> G("❌ No recuperados<br/>(n = 6)");
+    F --> H("<b>🔬 Evaluados para elegibilidad</b><br/>(n = 894)");
+    
+    H --> I("<b>❌ Excluidos:</b><br/>• No relevantes (n = 221)<br/>• No cumplen criterios (n = 622)<br/>• Baja calidad (n = 7)<br/><b>Total: (n = 850)</b>");
+    H --> J["<b>✅ Estudios incluidos</b><br/>(n = 44)"];
+
+    subgraph "🔬 Elegibilidad"
+        G
+        H
+        I
+    end
+
+    subgraph "✅ Inclusión Final"
+        J
+    end
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Evaluación de calidad simplificada -->
+                    <section id="evaluacion" class="mb-5">
+                        <h3 class="mb-4"><i class="bi bi-award fs-4 text-primary me-2"></i>Evaluación de Calidad</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="quality-card">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-clipboard-check text-success fs-1 me-3"></i>
+                                        <div>
+                                            <h5>Herramienta CASP <span class="tooltip-trigger" data-bs-toggle="tooltip" data-bs-placement="top" title="Critical Appraisal Skills Programme: Programa desarrollado por la Asociación Médica Americana en 1994 para evaluar críticamente la literatura médica. Comprende 10 ítems con opciones de respuesta 'sí', 'no' y 'no claro'"><i class="bi bi-info-circle text-primary"></i></span></h5>
+                                            <small class="text-muted">Critical Appraisal Skills Programme</small>
+                                        </div>
+                                    </div>
+                                    <p>Evalúa sistemáticamente la <strong>validez</strong> <span class="tooltip-trigger" data-bs-toggle="tooltip" data-bs-placement="top" title="Validez interna: Grado en que los resultados del estudio reflejan la verdad para los participantes estudiados"><i class="bi bi-info-circle text-primary"></i></span>, <strong>resultados</strong> y <strong>relevancia</strong> de cada estudio incluido <a href="#ref-21" class="ref-link">[21]</a>.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="quality-metrics">
+                                    <h6>Criterios de Calidad CASP:</h6>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Alta calidad</span>
+                                        <span class="badge bg-success">≤ 2 "No/Unclear"</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Calidad media</span>
+                                        <span class="badge bg-warning text-dark">3 "No/Unclear"</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>Baja calidad (excluidos)</span>
+                                        <span class="badge bg-danger">> 3 "No/Unclear"</span>
+                                    </div>
+                                    <div class="mt-3 p-2 bg-light rounded">
+                                        <small><strong>📊 Resultado:</strong> 7 estudios excluidos por baja calidad según criterios CASP</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning mt-3">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            <strong>Criterio de Exclusión:</strong> Los estudios de baja calidad fueron excluidos para garantizar la robustez de la revisión.
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Sidebar mejorada -->
+            <div class="col-lg-4">
+                <div class="card shadow mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0"><i class="bi bi-bookmark me-2"></i>Progreso del Análisis</h5>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a href="introduccion.html" class="list-group-item list-group-item-action">
+                            <i class="bi bi-check-circle text-success me-2"></i>1. Contexto y Fundamentos
+                        </a>
+                        <div class="list-group-item active">
+                            <i class="bi bi-play-circle me-2"></i>2. Metodología PRISMA
+                        </div>
+                        <a href="prisma.html" class="list-group-item list-group-item-action">
+                            <i class="bi bi-arrow-right me-2"></i>3. Diagrama Detallado
+                        </a>
+                        <a href="resultados.html" class="list-group-item list-group-item-action">
+                            <i class="bi bi-arrow-right me-2"></i>4. Síntesis de Resultados
+                        </a>
+                        <a href="discusion.html" class="list-group-item list-group-item-action">
+                            <i class="bi bi-arrow-right me-2"></i>5. Discusión y Futuro
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Métricas del proceso -->
+                <div class="card shadow mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h6 class="mb-0"><i class="bi bi-graph-up me-2"></i>Métricas del Proceso</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric-item">
+                            <div class="d-flex justify-content-between">
+                                <span>Tasa de inclusión</span>
+                                <strong class="text-primary">1.2%</strong>
+                            </div>
+                            <div class="progress mt-1" style="height: 4px;">
+                                <div class="progress-bar bg-primary" style="width: 1.2%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item mt-3">
+                            <div class="d-flex justify-content-between">
+                                <span>Calidad promedio</span>
+                                <strong class="text-success">Alta</strong>
+                            </div>
+                            <div class="progress mt-1" style="height: 4px;">
+                                <div class="progress-bar bg-success" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herramientas y recursos -->
+                <div class="card shadow">
+                    <div class="card-header bg-warning text-dark">
+                        <h6 class="mb-0"><i class="bi bi-tools me-2"></i>Herramientas Utilizadas</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-primary">PRISMA 2020</span>
+                            <span class="badge bg-success">CASP</span>
+                            <span class="badge bg-info">EndNote 20</span>
+                            <span class="badge bg-warning text-dark">MeSH Terms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Referencias -->
+    <section class="references-section bg-light py-4">
+        <div class="container">
+            <h4 class="mb-3"><i class="bi bi-book me-2"></i>Referencias Citadas</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="reference-item" id="ref-20">
+                        <span class="ref-number">[20]</span>
+                        <span class="ref-text">Page MJ, McKenzie JE, Bossuyt PM, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. <em>BMJ</em>. 2021;372:n71.</span>
+                    </div>
+                    <div class="reference-item" id="ref-21">
+                        <span class="ref-number">[21]</span>
+                        <span class="ref-text">Critical appraisal skills programme. (2022). CASP (Systematic Review) Checklist. Available at: https://casp-uk.net/referencing/</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="reference-item" id="ref-22">
+                        <span class="ref-number">[22]</span>
+                        <span class="ref-text">Higgins J, Green S. Cochrane handbook for systematic reviews of interventions version. The cochrane collaboration; 2011.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Desarrollado por:</h5>
+                    <p>Pablo Antonio Jordán González<br>
+                    Estudiante Doctorado Ciencias de la Ingeniería Mención Informática<br>
+                    Universidad Santiago de Chile</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2025 Todos los derechos reservados.</p>
+                    <p>Análisis basado en el paper de Guo, R., et al. (2024) en BMC Psychology.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Inicializar tooltips
+        document.addEventListener('DOMContentLoaded', function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+            
+            // Scroll suave a referencias
+            document.querySelectorAll('.ref-link').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        targetElement.style.backgroundColor = '#fff3cd';
+                        setTimeout(() => {
+                            targetElement.style.backgroundColor = '';
+                        }, 2000);
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</body>
+</html> 
